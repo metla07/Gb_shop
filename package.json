@@ -1,0 +1,32 @@
+{
+  "name": "gb_js_shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "watch": "webpack --watch"
+  },
+  "author": "Dron",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.5.1",
+    "express": "^4.17.2",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^2.5.2",
+    "morgan": "^1.10.0",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8.4.5",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  src: url("https://fonts.google.com/share?selection.family=Mochiy%20Pop%20P%20One") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@color: #fff;
+@border: 1px solid black;
+@width_goods-item: 200px;
+@height_goods-item: 200px;
+@min-width_group: 360px;
+@min-height_all: 100%;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-width: @min-width_group;
+  min-height: @min-height_all;
+  -webkit-box-shadow: inset 0px -25px 47px 0px rgba(2, 0, 3, 0.63);
+  -moz-box-shadow: inset 0px -25px 47px 0px rgba(2, 0, 3, 0.63);
+  box-shadow: inset 0px -25px 47px 0px rgba(2, 0, 3, 0.63);
+}
+
+body {
+  background-color: @color;
+  min-width: @min-width_group;
+  min-height: @min-height_all;
+}
+
+.button_style_header {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  align-self: center;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: #2ab3ff;
+  color: white;
+  //border: 2px solid #006089;
+  border-radius: 10px;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  text-transform: uppercase;
+  //transition: all 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.button_style_header:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #2fbb00;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.button_style_header:active {
+  background-color: greenyellow;
+  color: black;
+  box-shadow: 0 0 0 blue;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  background-color: rgba(67, 91, 247, 1);
+  //border: @border;
+  min-width: 100%;
+  min-height: 70px;
+  box-shadow: 0 5px 20px black;
+
+  h1 {
+    align-self: center;
+    text-align: center;
+    color: darkblue;
+    font-size: 60px;
+    display: block;
+    height: 100%;
+    line-height: 80px;
+    text-shadow: 0 2px 2px black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+
+  h1::first-letter {
+    font-size: larger;
+    color: white;
+  }
+
+  .nav_header {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-flow: wrap;
+    //border: @border;
+    min-width: 300px;
+    height: 100%;
+
+  }
+
+  .nav_btn:hover {
+    background-color: deepskyblue;
+    color: white;
+  }
+
+  .nav_btn:active {
+    background-color: aqua;
+    color: black;
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 100px auto;
+  //border: @border;
+  width: 100%;
+  min-width: @min-width_group;
+  min-height: 1500px;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  //border: @border;
+  min-width: 80%;
+  min-height: 100%;
+  margin-top: 80px;
+}
+
+.goods-item {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid darkblue;
+  border-radius: 10%;
+  min-width: @width_goods-item;
+  min-height: @height_goods-item;
+  margin: 100px 20px 50px 20px;
+  background-image: url("./img/background-for-banner.jpg");
+  background-size: cover;
+  box-shadow: 0 2px 20px black;
+  transition: all 0.3s ease;
+
+  img {
+
+    border: 3px solid white;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+
+  }
+
+  h3 {
+    text-align: center;
+    border-bottom: 4px solid darkblue;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+
+  p {
+    font-size: 40px;
+    color: darkblue;
+    margin: 10px auto;
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+
+  .btn_a_item {
+    //display: inline-block;
+    text-decoration: none;
+    background-color: #2ab3ff;
+    color: white;
+    //border: 2px solid #006089;
+    border-radius: 29px;
+    font-size: 1em;
+    padding: 5px 20px;
+    display: block;
+    box-shadow: 0 3px 3px black;
+  }
+}
+
+.btn_a_item:active {
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 0 0 green;
+}
+
+.goods-item:hover {
+  transition: all 0.3s ease;
+  border-color: green;
+  box-shadow: 0 2px 20px green;
+
+  .btn_a_item {
+    background-color: #2fbb00;
+  }
+
+  p {
+    color: green;
+  }
+
+  h3 {
+    border-bottom: 4px solid green;
+    color: green;
+  }
+
+  img {
+    border-color: green;
+  }
+}
+
+footer {
+  position: absolute;
+  min-width: 100%;
+  background-color: #6F6F70;
+  height: 200px;
+  bottom: -200px;
+  box-shadow: 0 0 100px #6F6F70;
+
+  p {
+    text-align: center;
+    display: block;
+    line-height: 200px;
+    font-size: 2em;
+
+  }
+}
+
+@media (max-width: 886px) {
+  .showcase {
+    margin-top: 180px;
+  }
+}
+
+
+@media (max-width: 860px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .showcase {
+    margin-top: -27px;
+  }
+}
+
+@media (max-width: 416px) {
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .nav_header {
+      flex-direction: column;
+      flex-flow: column;
+    }
+  }
+}
